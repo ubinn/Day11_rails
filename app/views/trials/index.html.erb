@@ -1,0 +1,7 @@
+<% @trial.each do |t| %>
+    <ul>
+    <li><a href="/trials/<%=t.id%>"><%=t.title%><small>  (작성자 : <%=t.name%>)  </small></a></li>
+    </ul>
+<% end %>
+<hr>
+<%= link_to "새 글 쓰기", "/trials/new" %>

@@ -1,0 +1,8 @@
+<%= form_tag("/trials", method: "post") do %>
+    <%=text_field_tag 'name', nil,placeholder: 'name' %>
+    <%=text_field_tag 'title',nil , placeholder:'title' %>
+    <br>
+    <br>
+    <%=text_area_tag 'contents',nil, placeholder: 'contents' %>
+    <%=submit_tag("제출하기") %>
+<% end %>

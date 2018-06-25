@@ -1,0 +1,7 @@
+<h1><%= @trial.title %></h1>
+<p>작성자 : <%=@trial.name %></p>
+<hr>
+<p><%=@trial.contents %></p>
+<%= link_to "목록", "/trials" %>
+<%= link_to "수정","/trials/#{@trial.id}/edit" %>
+<%= link_to "삭제", "/trials/#{@trial.id}", method:"delete" %>
